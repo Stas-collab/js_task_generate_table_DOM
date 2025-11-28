@@ -368,13 +368,14 @@ for (const person of people) {
   row.appendChild(nameCell);
 
   const genderCell = document.createElement('td');
+  let gender = '';
 
   if (person.gender === 'f') {
-    person.gender = 'Female';
+    gender = 'Female';
   } else {
-    person.gender = 'Male';
+    gender = 'Male';
   }
-  genderCell.textContent = person.gender;
+  genderCell.textContent = gender;
   row.appendChild(genderCell);
 
   const bornCell = document.createElement('td');
